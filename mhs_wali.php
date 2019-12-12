@@ -83,7 +83,8 @@ $result2 = $conn->query($query2);
                           <th>Alamat</th>
                           <th>No. HP</th>
                           <th>Angkatan</th>
-                          <!--<th>Judul Tugas Akhir</th>-->
+                          <th>Status Mahasiswa</th>
+                          <th>Judul Tugas Akhir</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -96,7 +97,8 @@ $result2 = $conn->query($query2);
                           <td><?php echo $row2['alamat'];?></td>
                           <td>+<?php echo $row2['no_hp'];?></td>
                           <td><?php echo $row2['angkatan'];?></td>
-                          <!--<td><?php echo $row2['judulta'];?></td>-->
+                          <td><?php echo $row2['status'];?></td>
+                          <td><?php echo $row2['judulta'];?></td>
                         </tr>
                       <?php } ?>
                     </tbody>

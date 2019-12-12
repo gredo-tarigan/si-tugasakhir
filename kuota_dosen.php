@@ -137,6 +137,7 @@ $row3 = $result3->fetch_assoc();
                                                     <th>No. HP</th>
                                                     <th>Angkatan</th>
                                                     <th>Judul Tugas Akhir</th>
+                                                    <th>Dosbing 2</th>
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
@@ -151,6 +152,7 @@ $row3 = $result3->fetch_assoc();
                                                     <td>+<?php if(empty($cari2)){echo "No HP Mahasiswa";} else{echo $row['no_hp'];}?></td>
                                                     <td><?php if(empty($cari2)){echo "Angkatan Mahasiswa";} else{echo $row['angkatan'];}?></td>
                                                     <td><?php if(empty($cari2)){echo "Judul TA Mahasiswa";} else{echo $row['judulta'];}?></td>
+                                                     <td><?php if(empty($cari2)){echo "Dosen Pembimbing2";} else{echo $row['nik2'];}?></td>
                                                     <td>
                                                     <a href='aksi_editdosen.php?nim=<?php echo $row['nim']; ?>' class="btn btn-primary">Edit</a></td>
                                                 </tr>

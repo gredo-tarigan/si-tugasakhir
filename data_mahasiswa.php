@@ -12,9 +12,13 @@ if(isset($_GET['cari2'])){
   $row = $result->fetch_assoc();
   $_SESSION["cari"] = $cari2;
   $_SESSION["nikdosen"] = $row['nik'];
+  $_SESSION["nikdosen2"] = $row['nik2']; //
   $query2 = "SELECT * FROM user WHERE upper(nama) LIKE  upper('%".$_SESSION["nikdosen"]."%')";
+  $query2_2 = "SELECT * FROM user WHERE upper(nama) LIKE  upper('%".$_SESSION["nikdosen2"]."%')"; //
   $result2 = $conn->query($query2);
+  $result2_2 = $conn->query($query2_2);//
   $row2 = $result2->fetch_assoc();
+  $row2_2 = $result2_2->fetch_assoc();//
   $sempro = $row['namafile'];
 }
 
@@ -99,12 +103,13 @@ $row1 = $result1->fetch_assoc();
                     </form></li>
                     <li class="list-group-item">
                       <form enctype="multipart/form-data" method="POST" action="upload_file3.php">
-                        <div><strong>Nama</strong><strong style="padding-left: 120px;">:</strong><strong style="padding-left: 25px;"><?php if(empty($cari2)){echo "Nama Mahasiswa";} else{echo $row['nama'];}?></strong></div>
-                        <div><strong>NIM</strong><strong style="padding-left: 133px;">:</strong><strong style="padding-left: 25px;"><?php if(empty($cari2)){echo "NIM Mahasiswa";} else{echo $row['nim'];}?></strong></div>
-                        <div><strong>Angkatan</strong><strong style="padding-left: 91px;">:</strong><strong style="padding-left: 25px;"><?php if(empty($cari2)){echo "Angkatan Mahasiswa";} else{echo $row['angkatan'];}?></strong></div>
-                        <div><strong>Judul Tugas Akhir</strong><strong style="padding-left: 33px;">:</strong><strong style="padding-left: 25px;"><?php if(empty($cari2)){echo "Judul TA";} else{echo $row['judulta'];}?></strong></div>
-                        <div><strong>Dosen Pembimbing</strong><strong style="padding-left: 20px;">:</strong><strong style="padding-left: 25px;"><?php if(empty($cari2)){echo "Dosen Pembimbing";} else{echo $row2['nama'];}?></strong></div>
-                        <div><strong>Form Pra-Bimbingan</strong><strong style="padding-left: 10px;">:</strong><input name="fuploadform" type="file" style="padding-left: 23px;"></div>
+                        <div><strong>Nama</strong><strong style="padding-left: 125px;">:</strong><strong style="padding-left: 25px;"><?php if(empty($cari2)){echo "Nama Mahasiswa";} else{echo $row['nama'];}?></strong></div>
+                        <div><strong>NIM</strong><strong style="padding-left: 138px;">:</strong><strong style="padding-left: 25px;"><?php if(empty($cari2)){echo "NIM Mahasiswa";} else{echo $row['nim'];}?></strong></div>
+                        <div><strong>Angkatan</strong><strong style="padding-left: 96px;">:</strong><strong style="padding-left: 25px;"><?php if(empty($cari2)){echo "Angkatan Mahasiswa";} else{echo $row['angkatan'];}?></strong></div>
+                        <div><strong>Judul Tugas Akhir</strong><strong style="padding-left: 38px;">:</strong><strong style="padding-left: 25px;"><?php if(empty($cari2)){echo "Judul TA";} else{echo $row['judulta'];}?></strong></div>
+                        <div><strong>Dosen Pembimbing 1</strong><strong style="padding-left: 12px;">:</strong><strong style="padding-left: 25px;"><?php if(empty($cari2)){echo "Dosen Pembimbing 1";} else{echo $row2['nama'];}?></strong></div>
+                        <div><strong>Dosen Pembimbing 2</strong><strong style="padding-left: 12px;">:</strong><strong style="padding-left: 25px;"><?php if(empty($cari2)){echo "Dosen Pembimbing 2";} else{echo $row2_2['nama'];}?></strong></div>
+                        <div><strong>Form Pra-Bimbingan</strong><strong style="padding-left: 15px;">:</strong><input name="fuploadform" type="file" style="padding-left: 23px;"></div>
                         <input type="submit" class="btn btn-primary btn-sm d-none d-sm-inline-block" type="submit" value="Save" name="Cari2" style="margin-left: 726px;width: 86px;">
                       </li>
                     </form>

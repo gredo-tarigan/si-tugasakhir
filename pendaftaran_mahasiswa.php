@@ -75,8 +75,8 @@
       <h2 class="text-center">Pendaftaran <br>Akun Mahasiswa SITA</h2>
       <div class="form-group"><input class="form-control" type="text" placeholder="User ID" name="username"></div>
       <div class="form-group"><input class="form-control" type="password" placeholder="Password" name="password"></div>
-      <div class="form-group"><input class="form-control" type="text" name="nama" placeholder="nama"></div>
-      <div class="form-group"><input class="form-control" type="number" placeholder="NIM" name="nim"></div>
+      <div class="form-group"><input class="form-control" type="text" name="nama" placeholder="Nama Lengkap Mahasiswa"></div>
+      <div class="form-group"><input class="form-control" type="number" placeholder="NIM" name="NIM"></div>
       <div class="form-group"><input class="form-control" type="email" placeholder="Email" name="email"></div>
       <div class="form-group"><input class="form-control" type="text" placeholder="Alamat" name="alamat"></div>
       <div class="form-group" placeholder="No. HP"><input class="form-control" type="tel" placeholder="No. HP" name="no_hp"></div>

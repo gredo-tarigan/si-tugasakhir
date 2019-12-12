@@ -85,7 +85,8 @@ $row = $result->fetch_assoc();
                             <li class="list-group-item"><strong>Nama &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:</strong><strong style="padding-left: 25px;"><?php echo $row["nama"];?></strong></li>
                             <li class="list-group-item"><strong>NIM &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :</strong><strong style="padding-left: 25px;"><?php echo $row["nim"];?></strong></li>
                             <li class="list-group-item"><strong>Judul Tugas Akhir &nbsp; &nbsp; &nbsp; &nbsp;:</strong><strong style="padding-left: 25px;"><?php echo $row["judulta"];?></strong></li>
-                            <li class="list-group-item"><strong>Dosen Pembimbing &nbsp; &nbsp;:</strong><strong style="padding-left: 25px;"><?php echo $row["nik"];?></strong></li>
+                            <li class="list-group-item"><strong>Dosen Pembimbing 1  &nbsp;:</strong><strong style="padding-left: 25px;"><?php echo $row["nik"];?></strong></li>
+                            <li class="list-group-item"><strong>Dosen Pembimbing 2  &nbsp;:</strong><strong style="padding-left: 25px;"><?php echo $row["nik2"];?></strong></li>
                             <li class="list-group-item"><strong>Dosen Penguji 1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:</strong><strong style="padding-left: 25px;"><?php echo $row["dosen_penguji1"];?></strong></li>
                             <li class="list-group-item"><strong>Dosen Penguji 2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:</strong><strong style="padding-left: 25px;"><?php echo $row["dosen_penguji2"];?></strong></li>
                             <li class="list-group-item"><strong>Tanggal Seminar &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:</strong><strong style="padding-left: 25px;"><?php echo $row["jadwal"];?></strong></li>
